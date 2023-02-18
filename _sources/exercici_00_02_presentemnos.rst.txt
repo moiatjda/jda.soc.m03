@@ -1,0 +1,47 @@
+###############################################
+|exerciseicon___| Exercici 00_02. Presentem-nos
+###############################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``00_02_presentemnos/``
+
+* Continguts relacionats: :doc:`holagit`, :doc:`ritual_holamon`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+.. rubric:: Enunciat
+
+En aquesta secció et proposo una senzilla modificació respecte el que hem vist
+al programa ``holamon.py``.
+
+Segueix les instruccions:
+
+#. Crea la carpeta ``00_02_presentemnos``
+
+   .. code-block:: console
+
+        $ mkdir 00_03_presentemnos
+        $ cd 00_03_presentemnos
+
+#. Crea un nou fitxer ``empresento.py`` i escriu-hi codi tal que, en ser
+   executat escrigui per pantalla el mateix que ``holamon.py``, excepte que, en
+   comptes de *Hola Món!*, sortirà un missatge similar al següent:
+
+   .. code-block:: console
+
+       Hola, sóc la Adelita, la futura millor desenvolupadora del Món!
+
+   Per favor, si no et dius *Adelita*, canvia el nom. Pots modificar també la resta
+   de la frase amb quelcom que sentis còmode.
+
+#. Aconsegueix que el programa pugui ser executat de la següent manera:
+
+   .. code-block:: console
+
+      $ ./empresento.py
+
+A banda de l'exercici, et recomano que facis tots els canvis que
+t'agradaria provar. Crea d'altres fitxers pels teus experiments, que pots
+mantenir sense problemes a aquesta carpeta.  La màxima és: **sense por**. No
+pots trencar res!

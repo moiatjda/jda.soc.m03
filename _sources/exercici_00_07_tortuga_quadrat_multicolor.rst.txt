@@ -1,0 +1,23 @@
+####################################################
+|exerciseicon___| Exercici 00_07. Quadrat multicolor
+####################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``00_07_tortuga_quadrat_multicolor/``
+
+* Continguts relacionats: :doc:`la_tortuga`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+.. rubric:: Enunciat
+
+Fes que el quadrat de ``turtle_square.py`` es dibuixi de la següent manera:
+
+.. image:: _images/turtle_square_colors.png
+    :align: center
+
+El nou fitxer es dirà ``turtle_multicolored_square.py``.
+
+**Pista**: pots canviar el color tot just abans de fer que la tortuga camini.
+Els colors de l'exemple són blau, vermell, groc (*yellow*) i verd (*green*)

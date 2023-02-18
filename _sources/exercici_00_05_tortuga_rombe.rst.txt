@@ -1,0 +1,22 @@
+##########################################
+|exerciseicon___| Exercici 00_05. Un rombe
+##########################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``00_05_tortuga_rombe/``
+
+* Continguts relacionats: :doc:`la_tortuga`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+.. rubric:: Enunciat
+
+En comptes de dibuixar un quadrat, prova ara de dibuixar un rombe quadrat com el següent
+
+.. image:: _images/turtle_rombe.png
+    :align: center
+
+El nou fitxer es dirà ``turtle_rombe.py``.
+
+**Pista**: en comptes de girar 90 graus, pots girar altres quantitats, per exemple 45.

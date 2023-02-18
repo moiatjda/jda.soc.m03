@@ -1,0 +1,23 @@
+##############################################
+|exerciseicon___| Exercici 00_10. El teu repte
+##############################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``00_10_repte_tortugues/``
+
+* Continguts relacionats: :doc:`la_tortuga`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+.. rubric:: Enunciat
+
+Ara que ja tens una idea, fes un repte. És a dir, codifica un programa que
+faci un dibuix amb el mòdul ``turtle``. Ensenya-li el resultat (no el
+codi) als companys i repta'ls per que l'intentin aconseguir.
+
+Anomena el fitxer ``turtle_challenge.py``.
+
+En cas que necessitis més inspiració, et proposo que miris per la Web. Amb una
+cerca ràpida d'exemples amb "python turtle", hi trobaràs entrades tan
+interessants com `aquesta <https://www.michael0x2a.com/blog/turtle-examples>`_.

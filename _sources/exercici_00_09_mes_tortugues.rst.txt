@@ -1,0 +1,46 @@
+###############################################
+|exerciseicon___| Exercici 00_09. Més tortugues
+###############################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``00_09_mes_tortugues/``
+
+* Continguts relacionats: :doc:`la_tortuga`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+.. rubric:: Enunciat
+
+No cal que ens quedem amb una única tortuga. Per exemple, el següent codi
+crea dues tortugues i les anomena ``blava`` i ``vermella``.
+
+.. code-block:: py
+
+    """
+        turtle_redandblue.py
+
+        Demostració de l'ús de Turtle dibuixant dues espirals a l'hora
+    """
+
+    import turtle
+    blava = turtle.Pen()
+    blava.color('blue')
+    vermella = turtle.Pen()         # Una altra tortuga!
+    vermella.color('red')
+    vermella.left(45)               # La tortuga vermella comença una mica abançada
+    for passes in range(100):
+        blava.right(90)
+        blava.forward(passes)
+        vermella.left(90)
+        vermella.forward(passes)
+    input()
+
+
+Crea una nova versió del programa que faci servir tres tortugues. La nova pot ser de color verd i
+fer els angles de 75 graus en comptes de 90 i que, camini el doble de passes que les altres dues a
+cada gir.
+
+El nou fitxer es dirà ``turtle_crowded.py``.
+
+**Pista**: el doble de passes és ``passes * 2``

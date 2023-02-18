@@ -1,0 +1,81 @@
+#####################
+Juguem amb la tortuga
+#####################
+
+
+Python ens ofereix moltes eines interessants per a aprendre a programar. Una
+d'elles és el mòdul ``turtle`` (tortuga)
+
+Considera el següent exemple:
+
+.. literalinclude:: _code/turtle_square.py
+    :linenos:
+    :language: python
+
+En executar-ho, el programa ens obre una finestra amb el següent contingut:
+
+.. image:: _images/turtle_square.png
+    :align: center
+
+.. note::
+
+   En cas que aparegui un error d'importació com ara
+
+   .. code-block:: console
+
+       Traceback (most recent call last):
+         File "/usr/lib/python3.5/tkinter/__init__.py", line 36, in <module>
+           import _tkinter
+       ImportError: No module named '_tkinter'
+
+       During handling of the above exception, another exception occurred:
+
+       Traceback (most recent call last):
+         File "_code/turtle_spiral.py", line 7, in <module>
+           import turtle
+         File "/usr/lib/python3.5/turtle.py", line 107, in <module>
+           import tkinter as TK
+         File "/usr/lib/python3.5/tkinter/__init__.py", line 38, in <module>
+           raise ImportError(str(msg) + ', please install the python3-tk package')
+       ImportError: No module named '_tkinter', please install the python3-tk package
+
+   En aquest cas, cal que instal·lis el packet ``python3-tk``. Per
+   exemple amb:
+
+   .. code-block:: console
+
+       $ sudo apt install python3-tk
+
+Considera ara un altre example una miqueta més sofisticat:
+
+.. literalinclude:: _code/turtle_spiral.py
+    :linenos:
+    :language: python
+
+
+En execurar-ho, aquest altre programa ens dibuixarà el següent:
+
+.. image:: _images/turtle_spiral.png
+    :align: center
+
+Exercicis
+=========
+
+Practiquem una mica tot modificant els programes anteriors. Per suposat, no
+esperis entendre-ho tot, simplement passa-t'ho bé!
+
+|exerciseicon___| :doc:`exercici_00_03_tortuga_quadrat_invertit`
+
+|exerciseicon___| :doc:`exercici_00_04_tortuga_quadrat_color`
+
+|exerciseicon___| :doc:`exercici_00_05_tortuga_rombe`
+
+|exerciseicon___| :doc:`exercici_00_06_tortuga_espiral_grossa`
+
+|exerciseicon___| :doc:`exercici_00_07_tortuga_quadrat_multicolor`
+
+|exerciseicon___| :doc:`exercici_00_08_tortuga_espiral_pirada`
+
+|exerciseicon___| :doc:`exercici_00_09_mes_tortugues`
+
+|exerciseicon___| :doc:`exercici_00_10_repte_tortugues`

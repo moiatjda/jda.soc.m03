@@ -1,0 +1,67 @@
+####################
+Requeriments tècnics
+####################
+
+En aquest curs farem servir el llenguatge de programació Python en la seva
+versió 3.9 o superior.
+
+Per la realització òptima del curs, recomano un PC amb una distribució
+recent de Debian o Ubuntu.
+
+En qualsevol d'aquestes distribucions, disposaràs directament d'una versió
+adequada de Python.
+
+Altres distribucions recents, o fins i tot altres sistemes operatius (ex.
+MSWindows i MacOS) haurien de servir igual de bé.
+
+* `Python en MSWindows <https://docs.python.org/3/using/windows.html>`_
+
+* `Python en MacOS <https://docs.python.org/3/using/mac.html>`_
+
+En aquests continguts, suposaré que fas servir un Debian/Ubuntu.
+
+Pots comprovar quina versió de Python tens instal·lada teclejant a un
+terminal:
+
+.. code-block:: console
+
+    $ python3 --version
+
+Si et respon amb un error, probablement no tens ben configurat el Python.
+Parlem-ne.
+
+El que necessitaràs i probablement no tindràs instal·lada, serà una
+utilitat de Python anomenada ``pip`` 
+
+.. code-block:: console
+
+    $ pip3 --version
+
+Si et respon amb un error, la pots instal·lar des de la paqueteria del teu
+sistema operatiu. En Debian/Ubuntu, la comanda és:
+
+.. code-block:: console
+
+    $ sudo apt update && sudo apt install python3-pip
+
+.. important:: Recorda que tens un docent amb moltes ganes d'ajudar-te si
+               trobes problemes de configuració.
+
+Aviat veuràs que el codi del programes, per exemple en Python,
+consisteixen en instruccions expressades en text. Per poder escriure
+aquestes instruccions, et caldrà un editor de text. En tens per `avorrir
+<https://wiki.python.org/moin/PythonEditors>`_. Et recomano que no et
+capfiquis gaire. Pensa que un millor editor no et farà ser millor
+programadora/programador. Com més senzill, millor. Un parell de
+recomanacions concretes:
+
+* Les distribucions GNU/Linux  que t'he recomenat, venen per defecte amb
+  *gedit* amb el que tindràs de sobres.
+
+* Un que està molt de moda darrerament és el `Visual Studio Code
+  <https://code.visualstudio.com/>`_ o `vscodium
+  <https://github.com/VSCodium/vscodium>`_ si et preocupa la teva
+  privacitat.
+
+Finalment, per una bona part dels continguts del curs, podries fins i tot fer ús
+d'eines com el `Google Colab <https://colab.research.google.com/>`_.

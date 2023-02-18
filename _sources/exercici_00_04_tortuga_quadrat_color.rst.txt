@@ -1,0 +1,18 @@
+##########################################################
+|exerciseicon___| Exercici 00_04. Quadrat d'un altre color
+##########################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``00_04_tortuga_quadrat_color/``
+
+* Continguts relacionats: :doc:`la_tortuga`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+.. rubric:: Enunciat
+
+Fes una nova versió de ``turtle_square.py`` que dibuixi el quadrat d'un
+altre color (ex. vermell *red*)
+
+El nou fitxer es dirà ``turtle_square_red.py``.

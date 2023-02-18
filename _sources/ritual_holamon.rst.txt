@@ -1,0 +1,111 @@
+################
+Ritual Hola Món!
+################
+
+Molt bé, ja tenim l'entorn per guardar les nostres respostes. Quan comencem a
+programar? Doncs ara mateix!
+
+Segueix les passes:
+
+1. Obre un terminal (ex. <ctrl><alt>t)
+
+2. Escriu a la línia de comandes (no incloguis ``$``)
+
+   .. code-block:: console
+
+       $ python3
+
+3. Escriu després de ``>>>`` (no incloguis tampoc ``>>>``)
+
+   .. code-block:: python
+
+       >>> print("Hola Món!")
+
+4. Si has vist la salutació al món, felicitats pel teu primer programa!
+
+5. Si apareix algun error, revisa que el text que has introduït
+   contingui **exactament** l'indicat. Corregeix el que calgui
+   i torna a executar fins que no s'indiqui cap error.
+
+6. Surt de l'intèrpret de Python prement ``ctrl-d``
+
+Ara ja som programadors iniciats. Tenim, però, un petit problema: el nostre programa l'hem de tornar
+a escriure cada cop que el vulguem executar. Una solució és guardar el codi del nostre programa (sí,
+allò que comença amb ``print``) en un fitxer de text.
+
+Segueix novament les instruccions:
+
+1. Escriu a la consola:
+
+   .. code-block:: console
+
+    $ mkdir -p ~/programacio/exemple.holamon
+    $ cd ~/programacio/exemple.holamon
+    $ gedit holamon.py
+
+2. A la finestra que t'apareixerà, escriu la línia amb el codi:
+
+   .. code-block:: python
+
+        print("Hola Món!")
+
+   Guarda el contingut del fitxer, per exemple amb ``ctrl-s`` i surt de gedit ``ctrl-q``
+
+3. Novament a la consola, comprovarem que tenim el nou fitxer:
+
+   .. code-block:: console
+
+        $ ls
+        holamon.py
+        $ cat holamon.py
+        print("Hola Món!")
+
+4. Executem el nostre programa des de la consola:
+
+   .. code-block:: console
+
+        $ python3 holamon.py
+        Hola Món!
+
+5. Si has vist la salutació al món, felicitats pel teu segon programa!
+
+6. si apareix algun error, revisa que hagis seguit les passes
+   **exactament**. Torna a realitzar totes les passes tot corregint el que calgui, fins que no
+   trobis cap error.
+
+Ja tenim el nostre programa de manera que el podem tornar a executar tants cops com vulguem.
+
+Encara ens podem estalviar haver d'escriure ``python3`` per executar el nostre programa.
+Per fer-ho, segueix les passes:
+
+1. Edita el fitxer ``holamon.py`` i fes que contingui el següent:
+
+   .. code-block:: python
+
+        #! /usr/bin/env python3
+        print("Hola Món!")
+
+   Quan la primera línia d'un fitxer comença amb ``#!``, l'intèrpret de Bash entén que aquest és el
+   programa que ha de processar la resta del contingut del fitxer. Es coneix com a *shebang*.
+
+2. Ara, cal dir-li al sistema operatiu que aquest fitxer és executable. Des de línia de comandes,
+   escrivim:
+
+   .. code-block:: console
+
+        $ ls -l holamon.py
+        -rw-r--r-- 1 profe profe 44 set  3 11:03 holamon.py
+        $ chmod u+x holamon.py
+        $ ls
+        -rwxr--r-- 1 profe profe 44 set  3 11:03 holamon.py
+
+   Fixa't com ara el fitxer conté la marca ``x`` als permisos
+
+3. Finalment executem el nostre programa:
+
+   .. code-block:: console
+
+        $ ./holamon.py
+        Hola Món!
+
+|exerciseicon___| :doc:`exercici_00_02_presentemnos`
