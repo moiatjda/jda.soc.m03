@@ -2,23 +2,28 @@
 Git i GitHub
 ############
 
-.. graphviz::
-    :align: center
+.. XXX For unknown reasons, the following graph is not working on this setting.
+   It has been replaced by a png but new related problems could arise
+.. .. graphviz::
+..     :align: center
+.. 
+..     digraph G {
+..         node [ shape="none" ];
+..         rankdir=LR
+.. 
+..         laptop [label="", image="_images/laptop.png"];
+.. 
+..         cloud [label="Web", fontsize=30, image="_images/cloud_icon.png"];
+.. 
+..         github [label="", image="_images/github_logo.png"];
+.. 
+..         // Relationships
+..         laptop -> cloud [dir="both", color="blue"];
+..         cloud -> github [dir="both", color="blue"];
+..     }
 
-    digraph G {
-        node [ shape="none" ];
-        rankdir=LR
-
-        laptop [label="", image="_images/laptop.png"];
-
-        cloud [label="Web", fontsize=30, image="_images/cloud_icon.png"];
-
-        github [label="", image="_images/github_logo.png"];
-
-        // Relationships
-        laptop -> cloud [dir="both", color="blue"];
-        cloud -> github [dir="both", color="blue"];
-    }
+.. image:: _images/laptop_to_github.png
+   :align: center
 
 Ara que ja hem vist quin aspecte fan els programes, ens toca fer els nostres!
 
@@ -65,10 +70,11 @@ Crear repositori
 ----------------
 
 Crear el teu repositori és molt fàcil. En primer lloc, ves a
-`https://github.com/` i, si encara no en tens un, crea't un compte.
+https://github.com/ i, si encara no en tens un, crea't un compte.
 
-Et recomano que el compte de correu que facis servir sigui el del centre
-doncs així tindràs totes les notificacions del curs a una mateixa adreça.
+Et recomano que la compta de correu que facis servir sigui el teu personal,
+doncs així el podràs aprofitar com el teu espai personal també en acabar el
+curs.
 
 Un cop disposes del teu compte, crea un repositori. 
 
