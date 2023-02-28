@@ -1,0 +1,36 @@
+########################################################
+|exerciseicon__T| Exercici 01_10. Una calculadora bàsica
+########################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``01_10_calculadora_basica/``
+
+* Continguts relacionats: :doc:`instruccions_pas_a_pas`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
+.. rubric:: Enunciat
+
+
+Desenvolupa una calculadora bàsica que demani a l'usuari dos operands enters i
+mostri el resultat de realitzar les operacions bàsiques (+ - * /) sobre
+els operands.
+
+Exemple d'interacció:
+
+.. code-block:: console
+
+    $ python3 calculadorabasica.py
+    Primer operand?
+    6
+    Segon operand?
+    2
+    6 + 2 = 8
+    6 - 2 = 4
+    6 * 2 = 12
+    6 / 2 = 3.0
+
+No et preocupis si alguna operació no és vàlida pels valors introduïts.

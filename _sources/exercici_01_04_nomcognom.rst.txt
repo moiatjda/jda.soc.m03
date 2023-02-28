@@ -1,0 +1,44 @@
+################################################
+|exerciseicon__T| Exercici 01_04. Noms i cognoms
+################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``01_04_nomcognom/``
+
+* Continguts relacionats: :doc:`instruccions_pas_a_pas`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
+.. rubric:: Enunciat
+
+
+Desenvolupa un programa en el fitxer anomenat ``nomcognom.py``, que demani a
+l'usuari el seu nom. Un cop obtingut, demanarà el seu cognom.  Finalment
+respondrà informant l'usuari que té una amiga amb el mateix cognom.
+
+Una simulació de l'execució del programa seria la següent:
+
+.. code-block:: console
+    :emphasize-lines: 1, 3, 5
+
+    $ python3 nomscognom.py
+    Nom?
+    Manel
+    Primer cognom?
+    Secallona
+    Ei Manel, tinc una amiga que també és Secallona.
+
+Per fer-ho, recorda les passes:
+
+1. Defineix una capçalera
+
+#. Simula una execució (pots fer servir la indicada abans)
+
+#. Decomposa el programa en, com a mínim tres subproblemes: obtenció de
+   l'entrada, càlcul i presentació dels resultats
+
+#. Resol cada subproblema. Si cal, decomposa'ls encara més.
+

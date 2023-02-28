@@ -1,0 +1,19 @@
+############
+Instruccions
+############
+
+Com hem vist, un programa no deixa de ser una seqüència d'instruccions que
+l'ordinador va executant de manera seqüencial.
+
+En aquesta secció en veurem dos tipus d'instruccions que ens permetran
+desenvolupar programes que interaccionin amb els nostres usuaris.
+
+.. toctree::
+    :maxdepth: 1
+    :titlesonly:
+
+    instruccions_assignacio.rst
+    instruccions_es.rst
+    instruccions_pas_a_pas.rst
+    instruccions_exercicis.rst
+

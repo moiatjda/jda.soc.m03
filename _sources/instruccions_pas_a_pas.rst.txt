@@ -1,0 +1,531 @@
+#####################
+Un programa pas a pas
+#####################
+
+Encara que tot plegat pugui semblar confós, no et deixis superar pel soroll. Els
+conceptes que estem treballant continuen sent molt simples: instruccions
+seqüencials que permeten assignar valors a variables.
+
+Construïm un programa senzillet, va.
+
+Ho farem molt pas a pas i, per aquesta raó, semblarà més complex del que
+és. Les tècniques que aplicarem durant la seva construcció, però, ens
+oferiran una bona guia per a fer programes més complexos.
+
+Et recomano que, en una primera lectura **només** llegeixis i intentis entendre
+el màxim de la següent descripció. Després tindràs l'oportunitat de realitzar
+les passes.
+
+El programa que saluda
+======================
+
+Considerem que volem construir un programa que demani als usuaris el seu
+nom i, tot seguit, el saludi amablement.
+
+Comencem per la part més important: el comentari de capçalera!
+
+En Python podem fer els comentaris de diferents maneres. La capçalera,
+però, és un comentari molt especial i és recomanable que la fem amb el
+bloc ``""" comentari """``:
+
+.. code-block:: python
+    :linenos:
+
+    """
+        Programa que demana a l'usuari el seu nom i li saluda pel seu nom
+    """
+
+Un cop hem escrit el comentari que descriu què fa el nostre programa,
+pensem com serà executat. Com l'enunciat no ho especifica, posarem els
+detalls que ens falten nosaltres mateixos. Per exemple, l'execució podria
+ser quelcom similar a:
+
+.. code-block:: console
+    :linenos:
+    :emphasize-lines: 1, 3
+
+    $ python3 saludausuari.py
+    Com et dius?
+    Manel
+    Hola Manel. M'encanta saber de tu.
+
+Amb la línia 1 hem establert el nom del fitxer que contindrà el nostre
+programa. Tot i que podem posar-li qualsevol, ``saludausuari.py`` sembla
+prou descriptiu.
+
+El contingut de la línia 3 correspon a l'entrada que escriuria un usuari
+(entrada estàndard).  Les línies 2 i 4, en canvi, les escriurà el nostre
+programa (sortida estàndard).
+
+D'aquesta manera, hem pres algunes decisions importants. En concret, ja
+tenim els missatges concrets i la manera d'interactuar amb l'usuari.
+
+Afegim l'exemple al nostre codi:
+
+.. code-block:: python
+    :linenos:
+
+    """
+        Programa que demana a l'usuari el seu nom i li saluda pel seu nom
+
+        Exemple d'execució:
+
+          $ python3 saludausuari.py
+          Com et dius?
+          Manel
+          Hola Manel. M'encanta saber de tu.
+    """
+
+Ara que ja tenim clar *què* és el que hem de fer, pensem *com*. És a dir, quines
+passes ens portaran a aconseguir el nostre objectiu.
+
+* primer, sembla que hem d'obtenir el nom de l'usuari, oi?
+
+* un cop el tinguem, haurem de construir el missatge de salutació
+
+* finalment, haurem de mostrar-li aquest missatge a l'usuari
+
+Doncs apa, a comentar el nostre codi. En aquesta ocasió, com els nous
+comentaris no corresponen a la capçalera, farem servir la marca dels comentaris en
+línia ``#``.
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 12,14,16
+
+    """
+        Programa que demana a l'usuari el seu nom i li saluda pel seu nom
+
+        Exemple d'execució:
+
+          $ python3 saludausuari.py
+          Com et dius?
+          Manel
+          Hola Manel. M'encanta saber de tu.
+    """
+
+    # XXX obtenir nom
+
+    # XXX composar el missatge
+
+    # XXX mostrar missatge
+
+Per emfatitzar que aquest comentaris són coses a fer, és típic incloure
+una marca com ara ``XXX`` o ``TODO``.
+
+El nostre programa continua creixent (16 línies!) i encara no fa res. A
+sobre, ara s'ha convertit en tres problemes a resoldre en comptes d'un!
+Ara hem de fer:
+
+1. Obtenir el nom
+
+2. Composar el missatge
+
+3. Mostrar el missatge
+
+En el seu favor, direm que cadascun dels tres subproblemes és més fàcil
+que el problema principal i, en resoldre tots tres, tenim resolt el
+principal! D'això en diem *dividir i vèncer*.
+
+.. sidebar:: Dividir i vèncer
+
+    La tècnica de *dividir i vèncer* o *divide and conquer* és una de les
+    més importants a l'hora de desenvolupar.
+
+    En el fons, és una tècnica molt simple:
+
+    1. Si el problema és prou simple, resol directament
+
+    2. Si el problema és complex, trenca-ho en peces i a cada peça aplica-li la tècnica *dividir i vèncer*
+
+Ara ens centrem en el primer subproblema. Hem de demanar-li el nom a
+l'usuari. Per fer-ho, ens caldrà primer explicitar-li què volem i després
+recollir la seva resposta.
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 14,16
+
+    """
+        Programa que demana a l'usuari el seu nom i li saluda pel seu nom
+
+        Exemple d'execució:
+
+          $ python3 saludausuari.py
+          Com et dius?
+          Manel
+          Hola Manel. M'encanta saber de tu.
+    """
+
+    # XXX obtenir nom
+
+    # XXX - demanar nom
+
+    # XXX - obtenir resposta
+
+    # XXX composar el missatge
+
+    # XXX mostrar missatge
+
+Tenim ara dos nous subproblemes. El primer és demanar el nom a l'usuari.
+Però aquest problema és molt senzill de resoldre. En tenim prou amb la
+instrucció:
+
+.. code-block:: python
+
+    print("Com et dius?")
+
+Doncs apa, col·loquem la nostra primera instrucció a ``saludausuari.py``!
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 14, 15
+
+    """
+        Programa que demana a l'usuari el seu nom i li saluda pel seu nom
+
+        Exemple d'execució:
+
+          $ python3 saludausuari.py
+          Com et dius?
+          Manel
+          Hola Manel. M'encanta saber de tu.
+    """
+
+    # XXX obtenir nom
+
+    # XXX - demanar nom
+    print("Com et dius?")
+
+    # XXX - obtenir resposta
+
+    # XXX composar el missatge
+
+    # XXX mostrar missatge
+
+
+Ara ja tenim quelcom executable. Per comprovar que no hem trencat res,
+podem executar el nostre incipient programa:
+
+.. code-block:: console
+    :linenos:
+    :emphasize-lines: 1
+
+    $ python3 saludausuari.py
+    Com et dius?
+
+L'execució s'acaba aquí. És clar, no hem programat res més. Però ens
+dóna confiança de que anem bé!
+
+Eliminem el comentari de la línia 12 doncs el codi ja és evident, i
+continuem pel següent subproblema:
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 16
+
+    """
+        Programa que demana a l'usuari el seu nom i li saluda pel seu nom
+
+        Exemple d'execució:
+
+          $ python3 saludausuari.py
+          Com et dius?
+          Manel
+          Hola Manel. M'encanta saber de tu.
+    """
+
+    # XXX obtenir nom
+
+    print("Com et dius?")
+
+    # XXX - obtenir resposta
+
+    # XXX composar el missatge
+
+    # XXX mostrar missatge
+
+El nou problema a resoldre consisteix en recollir el que l'usuari ens
+respongui. Com que ho farà per l'entrada estàndard, el que hem de fer
+servir és ``input()``. Hem de deixar el seu resultat en alguna variable.
+
+Ara el nostre problema és decidir el nom de la variable. Com que el que ha
+de contenir és el nom de l'usuari i no sembla que hàgim de tractar altres
+moms, què tal si l'anomenem simplement ``nom``?.
+
+La instrucció resultant seria, simplement:
+
+.. code-block:: python
+
+    nom = input()
+
+Incorporem la nova instrucció al nostre programa:
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 16, 17
+
+    """
+        Programa que demana a l'usuari el seu nom i li saluda pel seu nom
+
+        Exemple d'execució:
+
+          $ python3 saludausuari.py
+          Com et dius?
+          Manel
+          Hola Manel. M'encanta saber de tu.
+    """
+
+    # XXX obtenir nom
+
+    print("Com et dius?")
+
+    # XXX - obtenir resposta
+    nom = input()
+
+    # XXX composar el missatge
+
+    # XXX mostrar missatge
+
+Executem novament el nostre codi:
+
+.. code-block:: console
+    :linenos:
+    :emphasize-lines: 1, 3
+
+    $ python3 saludausuari.py
+    Com et dius?
+    Manel
+
+Aquest cop, en escriure ``Com et dius?`` es queda esperant. Quan li
+introduïm el nom, però, no fa res! Bé, clar, encara no li hem dit què n'ha
+de fer amb el nom.
+
+El que sí està clar és que ja hem completat el problema de recollir la
+resposta i, també, el problema més gros d'obtenir el nom. Fem neteja de
+comentaris innecessaris abans de continuar, i comencem a fixar-nos en el
+següent problema.
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 15
+
+    """
+        Programa que demana a l'usuari el seu nom i li saluda pel seu nom
+
+        Exemple d'execució:
+
+          $ python3 saludausuari.py
+          Com et dius?
+          Manel
+          Hola Manel. M'encanta saber de tu.
+    """
+
+    print("Com et dius?")
+    nom = input()
+
+    # XXX composar el missatge
+
+    # XXX mostrar missatge
+
+
+El nostre programa està agafant forma, oi?
+
+Passem ara al següent objectiu i composem el missatge. Per fer-ho, sabem
+que haurem de concatenar el nom que ens han introduït amb la resta del
+missatge. Una de les maneres que podem fer per construir el missatge
+seria:
+
+.. code-block:: python
+
+    "Hola " + nom + ". M'encanta saber de tu."
+
+Si no estem segurs de si això farà el que volem, podem entrar en la
+consola de Python i comprovar-ho:
+
+.. code-block:: python
+
+    >>> nom = "Manel"
+    >>> "Hola " + nom + ". M'encanta saber de tu."
+    "Hola Manel. M'encanta saber de tu."
+
+Fa bona pinta, oi?
+
+El resultat l'haurem de col·locar en algun lloc, és a dir, en
+una variable. Li podem dir per exemple ``missatge`` doncs és el que
+contindrà, no? La instrucció resultant seria:
+
+.. code-block:: python
+
+    missatge = "Hola " + nom + ". M'encanta saber de tu."
+
+Substituïm el comentari de la línia 13 per la nova instrucció al codi del
+programa:
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 15, 16
+
+    """
+        Programa que demana a l'usuari el seu nom i li saluda pel seu nom
+
+        Exemple d'execució:
+
+          $ python3 saludausuari.py
+          Com et dius?
+          Manel
+          Hola Manel. M'encanta saber de tu.
+    """
+
+    print("Com et dius?")
+    nom = input()
+
+    # XXX composar el missatge
+    missatge = "Hola " + nom + ". M'encanta saber de tu."
+
+    # XXX mostrar missatge
+
+
+Podem executar-ho per comprovar que no hem trencat res, però no veurem més
+resposta, doncs encara no hem dir que s'ha de fer amb el missatge. Això és
+justament el que ens demana el darrer objectiu.
+
+Però ja sabem com mostrar missatges de text per sortida estàndard, oi?
+
+.. code-block:: python
+
+    print(missatge)
+
+Reemplacem el comentari de la línia 15 per aquesta instrucció i tenim el
+programa:
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 18, 19
+
+    """
+        Programa que demana a l'usuari el seu nom i li saluda pel seu nom
+
+        Exemple d'execució:
+
+          $ python3 saludausuari.py
+          Com et dius?
+          Manel
+          Hola Manel. M'encanta saber de tu.
+    """
+
+    print("Com et dius?")
+    nom = input()
+
+    # XXX composar el missatge
+    missatge = "Hola " + nom + ". M'encanta saber de tu."
+
+    # XXX mostrar missatge
+    print(missatge)
+
+
+Executem el nostre programa:
+
+.. code-block:: console
+    :linenos:
+    :emphasize-lines: 1, 3
+
+    $ python3 saludausuari.py
+    Com et dius?
+    Manel
+    Hola Manel. M'encanta saber de tu.
+
+Bravo!
+
+Només ens queda fer neteja de comentaris ``XXX`` i ja ho tenim!
+
+.. code-block:: python
+    :linenos:
+
+    """
+        Programa que demana a l'usuari el seu nom i li saluda pel seu nom
+
+        Exemple d'execució:
+
+          $ python3 saludausuari.py
+          Com et dius?
+          Manel
+          Hola Manel. M'encanta saber de tu.
+    """
+
+    print("Com et dius?")
+    nom = input()
+
+    missatge = "Hola " + nom + ". M'encanta saber de tu."
+
+    print(missatge)
+
+Sol ser recomanable tornar a provar el nostre programa, encara que només
+hàgim tret comentaris, per si accidentalment hem trencat alguna cosa. En
+aquest cas, ho hem fet bé.
+
+
+Recapitulem
+===========
+
+.. sidebar:: Esquema bàsic dels nostres programes
+
+    Ara que estem aprenent a programar, ens trobarem que molt habitualment els nostres programes es descomposen en tres subproblemes:
+
+    - obtenir les dades a manipular
+
+    - manipular les dades per calcular la resposta
+
+    - generar la resposta obtinguda
+
+Per construir el nostre programet, hem realitzat les següents passes:
+
+1. Hem descrit en una capçalera què fa el nostre programa
+
+#. Hem simulat una execució del nostre programa, amb el que
+
+   - hem decidit el nom del fitxer
+
+   - hem decidit els missatges concrets que generarem
+
+   - hem decidit la manera concreta d'interaccionar amb l'usuari
+
+#. Tot seguit, hem descomposat el nostre problema en tres subproblemes
+
+   Hem afegit les descripcions dels subproblemes com a comentaris dins del
+   nostre codi. Els hem remarcat amb ``XXX`` (ho podríem haver fet amb
+   ``TODO`` en comptes).
+
+#. A continuació hem anat resolent cada subproblema. Aquells que
+   requereixen més d'una instrucció, els hem desglossat en subproblemes.
+
+#. Quan ja hem tingut les instruccions corresponent, hem substituït el
+   comentari ``XXX`` per les instruccions.
+
+#. Hem executat sovint el codi resultant per comprovar que tot anava
+   correctament.
+
+#. Quan hem tingut dubtes del funcionament d'alguna part, l'hem provada en
+   la consola de Python
+
+#. Un cop finalitzat el nostre programa i comprovat que funciona, l'hem
+   lliurat al nostre client i ens ha pagat. Bé, aquesta part de moment no
+   l'hem feta, però tot arribarà…
+
+Aquí tens alguns exercicis per practicar el que acabem de veure:
+
+|exerciseicon__T| :doc:`exercici_01_03_saluda`
+
+|exerciseicon__T| :doc:`exercici_01_04_nomcognom`
+
+|exerciseicon__T| :doc:`exercici_01_05_repetim_paraula`
+
+|exerciseicon___| :doc:`exercici_01_06_rectangle_a_mida`
+
+|exerciseicon__T| :doc:`exercici_01_07_quadrat_numero`
+
+|exerciseicon__T| :doc:`exercici_01_08_meitat_numero`
+
+|exerciseicon__T| :doc:`exercici_01_09_edat_aproximada`
+
+|exerciseicon__T| :doc:`exercici_01_10_calculadora_basica`

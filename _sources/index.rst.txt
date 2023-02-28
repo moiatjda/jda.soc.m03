@@ -19,9 +19,9 @@ Els continguts d'aquest curs estan organitzats en els següents temes:
     :maxdepth: 1
 
     primeres_passes.rst
+    instruccions.rst
     apendix.rst
 
-..    instruccions.rst
 ..    condicionals.rst
 ..    while.rst
 ..    recorreguts.rst

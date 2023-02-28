@@ -1,0 +1,21 @@
+########################################
+|exerciseicon___| Exercici 01_02. Crash!
+########################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``01_02_crash/``
+
+* Continguts relacionats: :doc:`instruccions_es`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+.. rubric:: Enunciat
+
+
+Intenta executar la darrera sense la crida a la funció ``str()`` a veure que
+passa.
+
+Descriu el que ha passat i comenta-ho amb les teves companyes i companys. Si no
+us en sortiu amb una explicació que us convenci, pregunteu al vostre docent que
+es mor per explicar-vos-ho!

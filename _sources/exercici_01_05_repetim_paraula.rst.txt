@@ -1,0 +1,50 @@
+#####################################################
+|exerciseicon__T| Exercici 01_05. Repetim una paraula
+#####################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``01_05_repetim_paraula/``
+
+* Continguts relacionats: :doc:`instruccions_pas_a_pas`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
+.. rubric:: Enunciat
+
+
+Desenvolupa un programa que demani
+a l'usuari una paraula i un número, i escrigui la paraula tants cops com digui
+el nombre.
+
+La interacció podria ser similar al següent:
+
+.. code-block:: console
+    :emphasize-lines: 3, 5
+
+    $ python3 paraularepetida.py
+    Diguem una paraula:
+    namaste
+    Diguem quants cops la vols:
+    5
+    namaste namaste namaste namaste namaste
+
+**Pistes**
+
+- Com sempre, fes servir les passes habituals per resoldre'l
+
+- L'operador ``*`` en Python permet multiplicar un text per un nombre i el
+  resultat és que el text es repeteix tants cops com digui el nombre
+
+  .. code-block:: python
+
+        >>> "hola" * 3
+        holaholahola
+
+- La teva solució, perquè es separin les paraules, requerirà que aparegui un
+  espai extra al final de cada repetició (incloent la darrera!)
+
+- Recorda que ``input()`` retorna un valor de tipus *string*. Això et
+  requerirà convertir-ho si et cal un número.

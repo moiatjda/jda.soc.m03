@@ -1,0 +1,35 @@
+###################################################
+|exerciseicon__T| Exercici 01_09. L'edat aproximada
+###################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``01_09_edat_aproximada/``
+
+* Continguts relacionats: :doc:`instruccions_pas_a_pas`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
+.. rubric:: Enunciat
+
+
+.. {{any:2019}}
+
+Desenvolupa un programa que demani el nom dels
+usuaris, l'any actual i l'any de naixement, calculi d'edat que tenen.
+
+La interacció serà:
+
+.. code-block:: console
+    :emphasize-lines: 2, 4, 6, 8
+
+    $ python3 edataaproximada.py 
+    Com us dieu?
+    Guido 
+    Hola Guido. Quin any vau nèixer?
+    1956
+    I quin any som?
+    2023
+    Així, Guido, diria que teniu 66 o 67 anys

@@ -1,0 +1,128 @@
+#########################
+Instruccions d'assignació
+#########################
+
+Les instruccions d'assignació permeten guardar un determinat *valor* a una
+posició de memòria per a poder-lo utilitzar més endavant. Per a poder
+referir-nos a aquesta posició de memòria, els llenguatges de programació
+ens ofereixen unes etiquetes que en diem *variables*.
+
+La forma habitual d'una assignació en Python és:
+
+.. code-block:: python
+
+    nomvariable = valor
+
+Per exemple:
+
+.. code-block:: python
+
+    edat = 18
+
+La variable es diu ``edat`` i, un cop executada la instrucció de la línia
+1, el valor ``18`` queda assignat a ``edat``. És a dir, a tot arreu que
+escrivim ``18`` podríem escriure ``edat``.
+
+El codi anterior el podem llegir de diferents maneres, com ara:
+
+* assigna ``18`` a la variable ``edat`` 
+
+* ``edat`` és igual a ``18`` 
+
+* ``edat`` val ``18`` 
+
+* emmagatzema el valor ``18`` en l'espai de memòria anomenat ``edat``
+
+Juguem amb l'exemple anterior a la consola de Python:
+
+.. code-block:: python
+    :linenos:
+
+    >>> edat = 18
+    >>> edat
+    18
+    >>> edat + 1
+    19
+    >>> edat == 18
+    True
+    >>> 18 == edat
+    True
+
+
+Fixa't la resposta que ens dóna Python per la instrucció de la línia
+``2``. Ens respon ``18``.
+
+Sabem que ``18 + 1`` és ``19``. La línia 4 comprova que ``edat + 1`` també
+és ``19``.
+
+>>> edat + 1
+19
+
+La línia 6 correspon a la pregunta *és edat igual a 18?*. Per suposat,
+Python ens respon que sí (*True*) Quina pregunta està fent la línia 8?
+
+
+Apa, més exemples:
+
+.. code-block:: python
+    :linenos:
+
+     text = "Hello World!"
+     i = -1 + 2 - 1 + 1 - 1
+     i = i + 1
+     ch = "A"
+     es_modificat = False
+     es_modificat = (x == y)
+
+Fixa't que el valor que assignem no té per què ser sempre un número.
+L'exemple de la línia 1 assigna un text. Encara més, de vegades, com a
+l'exemple de la línia 2, podem assignar el resultat de realitzar un
+càlcul. Python se n'encarregarà de fer aquest càlcul per nosaltres i, si
+ho escrivim bé, no es queixarà per absurd que sigui el que li demanem!
+
+Tipus de dades de la variable assignada
+=======================================
+
+Python decideix el tipus de dades a partir del tipus del valor assignat.
+Així, ``i = 3 + 6`` definiria la variable ``i`` de tipus enter.
+
+Per poder saber quin és el tipus assignat a una variable, Python ens
+ofereix la funció ``type()``. Per exemple:
+
+.. code-block:: python
+
+    >>> i = 3 + 6
+    >>> type(i)
+    <class 'int'>
+    >>> i = "hola"
+    <class 'str'>
+
+
+Amb els exemples que hem vist fins ara, hi podem trobar els tipus ``int``
+(números enters),``float`` (números amb decimals), ``str`` (text), i ``bool``
+(valors booleans ``True`` i ``Fale``). Hi ha més tipus, però de moment amb
+aquests anirem fent.
+
+Seqüència d'assignacions
+========================
+
+Quan executem una seqüència d'assignacions, una darrera de l'altra, cada
+assignació pot fer servir els valors assignats a les variables anteriors.
+
+Per exemple:
+
+.. code-block:: python
+
+    >>> i = 1               # assignem 1 a i
+    >>> i                   # consultem el valor de i
+    1
+    >>> j = i + 1           # assignem a j el valor de i (que és 1) més 1
+    >>> j
+    2
+    >>> i = j + 1           # assignem un nou valor a i
+    >>> i
+    3
+    >>> j                   # comprovem que el valor de j no s'ha modificat
+    2
+
+|exerciseicon___| :doc:`exercici_01_01_assignacio`

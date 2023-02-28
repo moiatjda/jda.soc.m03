@@ -1,0 +1,19 @@
+##################
+Llista d'exercicis
+##################
+
+Aquesta és la llista d'exercicis d'aquest tema:
+
+.. toctree::
+    :titlesonly:
+
+    exercici_01_01_assignacio.rst
+    exercici_01_02_crash.rst
+    exercici_01_03_saluda.rst
+    exercici_01_04_nomcognom.rst
+    exercici_01_05_repetim_paraula.rst
+    exercici_01_06_rectangle_a_mida.rst
+    exercici_01_07_quadrat_numero.rst
+    exercici_01_08_meitat_numero.rst
+    exercici_01_09_edat_aproximada.rst
+    exercici_01_10_calculadora_basica.rst

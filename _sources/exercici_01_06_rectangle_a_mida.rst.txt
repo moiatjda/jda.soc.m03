@@ -1,0 +1,55 @@
+#####################################################
+|exerciseicon___| Exercici 01_06. Un rectangle a mida
+#####################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``01_06_rectangle_a_mida/``
+
+* Continguts relacionats: :doc:`instruccions_pas_a_pas`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+.. rubric:: Enunciat
+
+
+Desenvolupa un programa a la carpeta ``01_06_rectangleamida`` que demani a
+l'usuària un color i la longitut dels dos costats d'un rectandle i, fent servir
+la tortuga, el dibuixi.
+
+La interacció pot ser similar a:
+
+.. code-block:: console
+    :emphasize-lines: 3, 5
+
+    $ python3 rectandeamida.py
+    Color del rectangle:
+    red
+    Longitut del primer costat:
+    50
+    Longitut del segon costat:
+    75
+
+A continuació, obrirà una finestra i dibuixarà el rectangle amb el color i els
+costats indicats,
+
+.. image:: _images/rectangleamida.png
+    :align: center
+
+El programa no és gaire diferent als que ja hem fet. Simplement et tocarà
+demanar el valor per a tres variables i usar-les a l'hora de fer les peticions a
+la tortuga. Per exemple, si hem guardat el valor del color a una variable
+anomenada ``color``, i la tortuga a la variable ``tortuga``, podem demanar-li el
+canvi de color amb:
+
+.. code-block:: python
+
+    tortuga.color(color)
+
+**Pistes**:
+
+* Recorda que ``input()`` et retorna sempre text i potser voldràs que sigui
+  numèric. En aquests casos caldrà convertir amb la funció ``int()``.
+
+* En aquest exercici, la simulació descrita no serà igual que les anteriors. En
+  concret la sortida haurà de ser descrita en llenguatge natural.

@@ -1,0 +1,42 @@
+#######################################################
+|exerciseicon__T| Exercici 01_08. La meitat d'un número
+#######################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``01_08_meitat_numero/``
+
+* Continguts relacionats: :doc:`instruccions_pas_a_pas`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
+.. rubric:: Enunciat
+
+
+Desenvolupa un programa que demani un número i escrigui la meitat del número
+introduït.
+
+La interacció podria ser similar al següent:
+
+.. code-block:: console
+    :emphasize-lines: 1, 3
+
+    $ python3 meitatnum.py
+    Donam un número:
+    5
+    La meitat entera de 5 és 2
+
+Com a pista per realitzar aquest exercici, considera la següent interacció amb la consola de Python
+
+.. code-block:: python
+
+    >>> 5 / 2           # divisió directa té decimals
+    2.5
+    >>> type(5 / 2)     # la divisió resulta en un float
+    <class 'float'>
+    >>> int(5/2)        # si convertim el resultat a enter, perdem els decimals
+    2
+    >>> type(int(5/2))  # el tipus resultant és enter
+    <class 'int'>

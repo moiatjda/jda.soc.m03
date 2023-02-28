@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ca" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrada/Sortida &mdash; Introducció a la Programació (SOC) 2223 documentació</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="_static/moistyle.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/logopython.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="Quant a aquests documents" href="about.html" />
+    <link rel="index" title="Índex" href="genindex.html" />
+    <link rel="search" title="Cerca" href="search.html" />
+    <link rel="next" title="Un programa pas a pas" href="instruccions_pas_a_pas.html" />
+    <link rel="prev" title="Instruccions d&#39;assignació" href="instruccions_assignacio.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Introducció a la Programació (SOC)
+            <img src="_static/logopython.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2223
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="primeres_passes.html">Primeres passes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="instruccions.html">Instruccions</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="instruccions_assignacio.html">Instruccions d'assignació</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Entrada/Sortida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="instruccions_pas_a_pas.html">Un programa pas a pas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="instruccions_exercicis.html">Llista d'exercicis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="apendix.html">Apèndix</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Introducció a la Programació (SOC)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="instruccions.html">Instruccions</a></li>
+      <li class="breadcrumb-item active">Entrada/Sortida</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="instruccions_assignacio.html" class="btn btn-neutral float-left" title="Instruccions d&#39;assignació" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="instruccions_pas_a_pas.html" class="btn btn-neutral float-right" title="Un programa pas a pas" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="entrada-sortida">
+<h1>Entrada/Sortida<a class="headerlink" href="#entrada-sortida" title="Permalink to this heading"></a></h1>
+<p>En una primera aproximació, les instruccions d’entrada recullen un valor
+des d’un dispositiu d’entrada (ex. teclat) i l’assignen a una variable.</p>
+<p>Per la seva banda, les instruccions de sortida dipositen el resultat d’una
+expressió a un dispositiu de sortida (ex. pantalla).</p>
+<p>Quan llencem un programa per ser executat, el sistema operatiu li obre
+automàticament tres canals (o fitxers) anomenats <em>entrada estàndard</em>,
+<em>sortida estàndard</em> i <em>sortida estàndard d'error</em>. A menys que es faci
+res especial, el fitxer d'entrada queda <em>connectat</em> al teclat, mentre
+que els dos canals de sortida queden <em>connectats</em> a la pantalla.</p>
+<img alt="_images/esquema_es.png" class="align-center" src="_images/esquema_es.png" />
+<p>De moment no en farem gaire cas de la sortida estàndard d'error.</p>
+<div class="section" id="entrada">
+<h2>Entrada<a class="headerlink" href="#entrada" title="Permalink to this heading"></a></h2>
+<p>Per llegir de l'entrada estàndard farem:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">input()</span></code> és el que s'anomena una <em>funció</em>. Ja n'hem vist alguna (ex.
+<code class="docutils literal notranslate"><span class="pre">type()</span></code>). Anirem veient moltes de funcions a mida que avancem en la
+programació.</p>
+<p>És important tenir clar que el resultat de <code class="docutils literal notranslate"><span class="pre">input()</span></code> és sempre de tipus text o
+string. De vegades ens pot interessar que sigui un número, per exemple, per
+sumar-li un valor. Fixa't en la següent interacció:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">edat</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="go">18</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">edat</span>
+<span class="go">&#39;18&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">edat</span><span class="p">)</span>                  <span class="c1"># edat no és un numèric</span>
+<span class="go">&lt;class &#39;str&#39;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">edat_mes_u</span> <span class="o">=</span> <span class="n">edat</span> <span class="o">+</span> <span class="mi">1</span>       <span class="c1"># intentem sumar-li 1 al valor d&#39;edat</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">TypeError</span>: <span class="n">Can&#39;t convert &#39;int&#39; object to str implicitly</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">edat_enter</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">edat</span><span class="p">)</span>      <span class="c1"># convertim edat a enter amb int()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">edat_enter</span><span class="p">)</span>
+<span class="go">&lt;class &#39;int&#39;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">edat_mes_u</span> <span class="o">=</span> <span class="n">edat_enter</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># ara sí que podem sumar 1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">edat_mes_u</span>
+<span class="go">19</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sortida">
+<h2>Sortida<a class="headerlink" href="#sortida" title="Permalink to this heading"></a></h2>
+<p>Per escriure, simplement farem:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello world!&#39;</span><span class="p">)</span>
+<span class="linenos">2</span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tinc&#39;</span><span class="p">,</span> <span class="n">edat_enter</span><span class="p">,</span> <span class="s1">&#39;anys&#39;</span><span class="p">)</span>
+<span class="linenos">3</span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tindré&#39;</span><span class="p">,</span> <span class="n">edat_enter</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;anys&#39;</span><span class="p">)</span>
+<span class="linenos">4</span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;He tingut &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">edat_enter</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; anys&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><img alt="exerciseicon___" src="_images/exerciseicon___.png" /> <a class="reference internal" href="exercici_01_02_crash.html"><span class="doc"> Exercici 01_02. Crash!</span></a></p>
+<p>Fixa't que cada cop que fem executar <code class="docutils literal notranslate"><span class="pre">print()</span></code> ens mostra el contingut
+que hi ha entre parèntesis i ens finalitza amb un salt de línia.</p>
+<p>Per exemple, considera el programa següent:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tinc&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">edat_enter</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;anys&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>En executar-ho, obtindrem:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Tinc
+18
+anys
+</pre></div>
+</div>
+<p>En cas que vulguem que aquestes tres sentències es mostrin a la mateixa
+línia, ens caldrà indicar-ho a <code class="docutils literal notranslate"><span class="pre">print()</span></code> de la següent manera:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tinc&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">edat_enter</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;anys&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>En executar-ho, obtindrem:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Tinc 18 anys
+</pre></div>
+</div>
+<p>Fixat que <code class="docutils literal notranslate"><span class="pre">end='</span> <span class="pre">'</span></code> té un espai entre les cometes. Hi podríem posar
+qualsevol altre text, per exemple:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tinc&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&lt;&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">edat_enter</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&gt;&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;anys&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>En executar-ho, obtindrem:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Tinc&lt;18&gt;anys
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="instruccions_assignacio.html" class="btn btn-neutral float-left" title="Instruccions d&#39;assignació" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="instruccions_pas_a_pas.html" class="btn btn-neutral float-right" title="Un programa pas a pas" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023 - Moisès Gómez Girón.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41103782-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-41103782-2', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

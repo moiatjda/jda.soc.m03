@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ca" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instruccions d&#39;assignació &mdash; Introducció a la Programació (SOC) 2223 documentació</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="_static/moistyle.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/logopython.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="Quant a aquests documents" href="about.html" />
+    <link rel="index" title="Índex" href="genindex.html" />
+    <link rel="search" title="Cerca" href="search.html" />
+    <link rel="next" title="Entrada/Sortida" href="instruccions_es.html" />
+    <link rel="prev" title="Instruccions" href="instruccions.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Introducció a la Programació (SOC)
+            <img src="_static/logopython.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2223
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="primeres_passes.html">Primeres passes</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="instruccions.html">Instruccions</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Instruccions d'assignació</a></li>
+<li class="toctree-l2"><a class="reference internal" href="instruccions_es.html">Entrada/Sortida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="instruccions_pas_a_pas.html">Un programa pas a pas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="instruccions_exercicis.html">Llista d'exercicis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="apendix.html">Apèndix</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Introducció a la Programació (SOC)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="instruccions.html">Instruccions</a></li>
+      <li class="breadcrumb-item active">Instruccions d'assignació</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="instruccions.html" class="btn btn-neutral float-left" title="Instruccions" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="instruccions_es.html" class="btn btn-neutral float-right" title="Entrada/Sortida" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="instruccions-d-assignacio">
+<h1>Instruccions d'assignació<a class="headerlink" href="#instruccions-d-assignacio" title="Permalink to this heading"></a></h1>
+<p>Les instruccions d'assignació permeten guardar un determinat <em>valor</em> a una
+posició de memòria per a poder-lo utilitzar més endavant. Per a poder
+referir-nos a aquesta posició de memòria, els llenguatges de programació
+ens ofereixen unes etiquetes que en diem <em>variables</em>.</p>
+<p>La forma habitual d'una assignació en Python és:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nomvariable</span> <span class="o">=</span> <span class="n">valor</span>
+</pre></div>
+</div>
+<p>Per exemple:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">edat</span> <span class="o">=</span> <span class="mi">18</span>
+</pre></div>
+</div>
+<p>La variable es diu <code class="docutils literal notranslate"><span class="pre">edat</span></code> i, un cop executada la instrucció de la línia
+1, el valor <code class="docutils literal notranslate"><span class="pre">18</span></code> queda assignat a <code class="docutils literal notranslate"><span class="pre">edat</span></code>. És a dir, a tot arreu que
+escrivim <code class="docutils literal notranslate"><span class="pre">18</span></code> podríem escriure <code class="docutils literal notranslate"><span class="pre">edat</span></code>.</p>
+<p>El codi anterior el podem llegir de diferents maneres, com ara:</p>
+<ul class="simple">
+<li><p>assigna <code class="docutils literal notranslate"><span class="pre">18</span></code> a la variable <code class="docutils literal notranslate"><span class="pre">edat</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">edat</span></code> és igual a <code class="docutils literal notranslate"><span class="pre">18</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">edat</span></code> val <code class="docutils literal notranslate"><span class="pre">18</span></code></p></li>
+<li><p>emmagatzema el valor <code class="docutils literal notranslate"><span class="pre">18</span></code> en l'espai de memòria anomenat <code class="docutils literal notranslate"><span class="pre">edat</span></code></p></li>
+</ul>
+<p>Juguem amb l'exemple anterior a la consola de Python:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="gp">&gt;&gt;&gt; </span><span class="n">edat</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="linenos">2</span><span class="gp">&gt;&gt;&gt; </span><span class="n">edat</span>
+<span class="linenos">3</span><span class="go">18</span>
+<span class="linenos">4</span><span class="gp">&gt;&gt;&gt; </span><span class="n">edat</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="linenos">5</span><span class="go">19</span>
+<span class="linenos">6</span><span class="gp">&gt;&gt;&gt; </span><span class="n">edat</span> <span class="o">==</span> <span class="mi">18</span>
+<span class="linenos">7</span><span class="go">True</span>
+<span class="linenos">8</span><span class="gp">&gt;&gt;&gt; </span><span class="mi">18</span> <span class="o">==</span> <span class="n">edat</span>
+<span class="linenos">9</span><span class="go">True</span>
+</pre></div>
+</div>
+<p>Fixa't la resposta que ens dóna Python per la instrucció de la línia
+<code class="docutils literal notranslate"><span class="pre">2</span></code>. Ens respon <code class="docutils literal notranslate"><span class="pre">18</span></code>.</p>
+<p>Sabem que <code class="docutils literal notranslate"><span class="pre">18</span> <span class="pre">+</span> <span class="pre">1</span></code> és <code class="docutils literal notranslate"><span class="pre">19</span></code>. La línia 4 comprova que <code class="docutils literal notranslate"><span class="pre">edat</span> <span class="pre">+</span> <span class="pre">1</span></code> també
+és <code class="docutils literal notranslate"><span class="pre">19</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">edat</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="go">19</span>
+</pre></div>
+</div>
+<p>La línia 6 correspon a la pregunta <em>és edat igual a 18?</em>. Per suposat,
+Python ens respon que sí (<em>True</em>) Quina pregunta està fent la línia 8?</p>
+<p>Apa, més exemples:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span> <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Hello World!&quot;</span>
+<span class="linenos">2</span> <span class="n">i</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">-</span> <span class="mi">1</span>
+<span class="linenos">3</span> <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="linenos">4</span> <span class="n">ch</span> <span class="o">=</span> <span class="s2">&quot;A&quot;</span>
+<span class="linenos">5</span> <span class="n">es_modificat</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="linenos">6</span> <span class="n">es_modificat</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Fixa't que el valor que assignem no té per què ser sempre un número.
+L'exemple de la línia 1 assigna un text. Encara més, de vegades, com a
+l'exemple de la línia 2, podem assignar el resultat de realitzar un
+càlcul. Python se n'encarregarà de fer aquest càlcul per nosaltres i, si
+ho escrivim bé, no es queixarà per absurd que sigui el que li demanem!</p>
+<div class="section" id="tipus-de-dades-de-la-variable-assignada">
+<h2>Tipus de dades de la variable assignada<a class="headerlink" href="#tipus-de-dades-de-la-variable-assignada" title="Permalink to this heading"></a></h2>
+<p>Python decideix el tipus de dades a partir del tipus del valor assignat.
+Així, <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">=</span> <span class="pre">3</span> <span class="pre">+</span> <span class="pre">6</span></code> definiria la variable <code class="docutils literal notranslate"><span class="pre">i</span></code> de tipus enter.</p>
+<p>Per poder saber quin és el tipus assignat a una variable, Python ens
+ofereix la funció <code class="docutils literal notranslate"><span class="pre">type()</span></code>. Per exemple:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">6</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="go">&lt;class &#39;int&#39;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="s2">&quot;hola&quot;</span>
+<span class="go">&lt;class &#39;str&#39;&gt;</span>
+</pre></div>
+</div>
+<p>Amb els exemples que hem vist fins ara, hi podem trobar els tipus <code class="docutils literal notranslate"><span class="pre">int</span></code>
+(números enters),``float`` (números amb decimals), <code class="docutils literal notranslate"><span class="pre">str</span></code> (text), i <code class="docutils literal notranslate"><span class="pre">bool</span></code>
+(valors booleans <code class="docutils literal notranslate"><span class="pre">True</span></code> i <code class="docutils literal notranslate"><span class="pre">Fale</span></code>). Hi ha més tipus, però de moment amb
+aquests anirem fent.</p>
+</div>
+<div class="section" id="sequencia-d-assignacions">
+<h2>Seqüència d'assignacions<a class="headerlink" href="#sequencia-d-assignacions" title="Permalink to this heading"></a></h2>
+<p>Quan executem una seqüència d'assignacions, una darrera de l'altra, cada
+assignació pot fer servir els valors assignats a les variables anteriors.</p>
+<p>Per exemple:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>               <span class="c1"># assignem 1 a i</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span>                   <span class="c1"># consultem el valor de i</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>           <span class="c1"># assignem a j el valor de i (que és 1) més 1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">j</span>
+<span class="go">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">j</span> <span class="o">+</span> <span class="mi">1</span>           <span class="c1"># assignem un nou valor a i</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">j</span>                   <span class="c1"># comprovem que el valor de j no s&#39;ha modificat</span>
+<span class="go">2</span>
+</pre></div>
+</div>
+<p><img alt="exerciseicon___" src="_images/exerciseicon___.png" /> <a class="reference internal" href="exercici_01_01_assignacio.html"><span class="doc"> Exercici 01_01. Què he entès sobre l'assignació</span></a></p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="instruccions.html" class="btn btn-neutral float-left" title="Instruccions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="instruccions_es.html" class="btn btn-neutral float-right" title="Entrada/Sortida" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023 - Moisès Gómez Girón.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41103782-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-41103782-2', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

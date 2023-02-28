@@ -1,0 +1,52 @@
+###################################################################
+|exerciseicon__T| Exercici 01_03. El programa que saluda (repassat)
+###################################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``01_03_saluda/``
+
+* Continguts relacionats: :doc:`instruccions_pas_a_pas`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
+.. rubric:: Enunciat
+
+
+Segurament mentre t'ho explicava a classe no has tingut temps de teclejar
+l'exercici d'exemple. És una bona pràctica escriure'l sencer des de zero.
+
+Torna a rellegir la descripció de com desenvolupar el programa que saluda,
+aquest cop segueix les passes fins que el programa s'executi.
+
+Una simulació de l'execució del programa seria la següent:
+
+.. code-block:: console
+    :emphasize-lines: 1, 3
+
+    $ python3 saludausuari.py
+    Com et dius?
+    Manel
+    Hola Manel. M'encanta saber de tu.
+
+Com que aquest exercici té autoavaluació, pots comprovar que el teu programa
+passa les meves proves, tot executant la següent comanda:
+
+.. code-block:: console
+
+    $ prgtest
+
+    Test 01: PASSA 
+    Test 02: PASSA 
+    El teu exercici passa totes les proves
+
+Un cop veus aquest missatge, és el moment de lliurar el teu exercici. Et recordo les comandes bàsiques:
+
+.. code-block:: console
+
+    $ git pull                                                  # només a l'inici de la sessió
+    $ git add saludausuari.py                                   # presentem el programa a git
+    $ git commit -am "Finalitzat exercici 01_03 Ara ja saluda"  # registrem els canvis
+    $ git push                                                  # només al final de la sessió
