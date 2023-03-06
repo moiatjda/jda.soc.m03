@@ -1,0 +1,21 @@
+##################
+Llista d'exercicis
+##################
+
+Aquesta és la llista d'exercicis del tema de :doc:`condicionals
+<condicionals>` és:
+
+.. toctree::
+    :titlesonly:
+
+    exercici_02_01_preso.rst
+    exercici_02_02_dosenordre.rst
+    exercici_02_03_quadratsentit.rst
+    exercici_02_04_mesosianys.rst
+    exercici_02_05_tresenordre.rst
+    exercici_02_06_calculadorasenzilla.rst
+    exercici_02_07_pagaments.rst
+    exercici_02_08_semafor.rst
+    exercici_02_09_nombredefills.rst
+    exercici_02_10_ascensor.rst
+    exercici_02_11_tortugasemafor.rst

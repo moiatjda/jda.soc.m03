@@ -1,0 +1,34 @@
+##############################################
+|exerciseicon__T| Exercici 02_02. Dos en ordre
+##############################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``02_02_dosenordre/``
+
+* Continguts relacionats: :doc:`condicionals_doble`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
+.. rubric:: Enunciat
+
+
+Desenvolupa un programa que demani dos números i escrigui els dos números
+ordenats creixentment (de menor a major). Per exemple, si els números són
+3 i 2, el resultat serà 2 3
+
+Indica amb un comentari, que passa si els dos números són iguals.
+
+Exemple d'interacció:
+
+.. code-block:: console
+    :emphasize-lines: 2, 4, 6
+
+    $ python3 dosenordre.py
+    Primer?
+    3
+    Segon?
+    2
+    2 i 3

@@ -1,0 +1,31 @@
+##############################################
+|exerciseicon__T| Exercici 02_04. Mesos i anys
+##############################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``02_04_mesosianys/``
+
+* Continguts relacionats: :doc:`condicionals_niament`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
+.. rubric:: Enunciat
+
+
+Desenvolupa un programa que demani un mes i un any, i
+escrigui el mes anterior i el mes següent.
+
+Exemple d'interacció:
+
+.. code-block:: console
+    :emphasize-lines: 2, 4, 6
+
+    $ python3 mesosianys.py
+    Mes?
+    10
+    Any?
+    2003
+    Anterior 9/2003 i posterior 11/2003

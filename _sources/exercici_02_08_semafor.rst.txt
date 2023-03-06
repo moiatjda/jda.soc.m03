@@ -1,0 +1,34 @@
+#####################################################
+|exerciseicon__T| Exercici 02_08. La guia de semàfors
+#####################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``02_08_semafor/``
+
+* Continguts relacionats: :doc:`condicionals_niament`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
+.. rubric:: Enunciat
+
+
+Desenvolupem un ajudant infantil per decidir que fer
+davant un semàfor (*vermell*, *verd* o *groc*). El programa demanarà de
+quin color està el semàfor i segons la resposta recomanarà respectivament
+*espera*, *passa*, o *corre!*.
+
+En cas que el color introduït no sigui cap d'aquests, el programa
+respondrà amb el missatge *ves a l'oculista*.
+
+Exemple d'interacció:
+
+.. code-block:: console
+    :emphasize-lines: 2, 4
+
+    $ python3 semafor.py
+    Color?
+    groc
+    corre!

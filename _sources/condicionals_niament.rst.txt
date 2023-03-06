@@ -1,0 +1,66 @@
+################
+Niament múltiple
+################
+
+"Si plou treu el paraigües, si neva treu la caputxa, altrament
+deixa-ho tot a casa"
+
+En Python ho podríem expressar de la següent manera:
+
+.. code-block:: python
+
+    if plou:
+        treu_el_paraigues()
+    else:
+        if neva:
+            treu_la_caputxa()
+        else:
+            deixaho_a_casa()
+
+És clar, les estructures condicionals són també instruccions i, com a
+tals, les podem posar allà on tingui sentit una instrucció. Per
+exemple, dins d'un bloc d'una altra condició.
+
+En programació, quan una estructura es troba dins d'una altra del
+mateix tipus és sol dir que les estructures es troben *niades*. És una
+mala traducció del terme anglès *nested* però no tenim al nostre
+idioma cap paraula que expressi amb precisió aquest concepte. En
+alguns llocs trobaràs que fan servir *imbricades*. Bé, el significat
+és molt més proper que el dels nius però tampoc no és precís.
+
+Evidentment, dins del bloc d'instruccions de l'exemple també hi
+podríem posar nous condicionals *ad infinitum*.
+
+Aquesta situació de tenir més d'una condició, però, és tant comuna que
+molts llenguatges ofereixen una manera més compacta d'expressar-les.
+
+En Python tenim la paraula reservada ``elif`` com a contracció de ``else-if``.
+
+.. code-block:: python
+
+    if plou:
+        treu_el_paraigues()
+    elif neva:
+        treu_la_caputxa()
+    else:
+        deixaho_a_casa()
+
+Per cert, podem indicar tants ``elif`` com ens calguin i no és obligatori acabar
+amb un ``else``.
+
+
+|exerciseicon__T| :doc:`exercici_02_04_mesosianys`
+
+|exerciseicon__T| :doc:`exercici_02_05_tresenordre`
+
+|exerciseicon__T| :doc:`exercici_02_06_calculadorasenzilla`
+
+|exerciseicon__T| :doc:`exercici_02_07_pagaments`
+
+|exerciseicon__T| :doc:`exercici_02_08_semafor`
+
+|exerciseicon___| :doc:`exercici_02_09_nombredefills`
+
+|exerciseicon__T| :doc:`exercici_02_10_ascensor`
+
+|exerciseicon___| :doc:`exercici_02_11_tortugasemafor`

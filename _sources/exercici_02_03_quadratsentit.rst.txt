@@ -1,0 +1,38 @@
+##########################################################
+|exerciseicon___| Exercici 02_03. Quadrat dretà o esquerrà
+##########################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``02_03_quadratsentit/``
+
+* Continguts relacionats: :doc:`condicionals_doble`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+.. rubric:: Enunciat
+
+
+Desenvolupa un programa que demani als usuaris un color, un sentit (dreta o
+esquerra) i una longitud de costat.
+
+Un cop obtingudes totes les dades, el programa crearà una tortuga que dibuixarà
+el quadrat amb el color i dimensions indicats, i en el sentit demanat.
+
+La simulació del programa podria ser similar a:
+
+.. code-block:: console
+    :emphasize-lines: 2, 4, 6
+
+    $ python3 quadratsentit.py
+    Color?
+    red
+    Left or right?
+    right
+    Length?
+    100
+
+.. image:: _images/turtlecustomizedsquare.gif
+    :align: center
+
+Nota: podem pressuposar que els valors que ens introdueixin són correctes.

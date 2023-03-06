@@ -1,0 +1,59 @@
+##########################################################
+|exerciseicon__T| Exercici 02_06. Una calculadora senzilla
+##########################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``02_06_calculadorasenzilla/``
+
+* Continguts relacionats: :doc:`condicionals_niament`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
+.. rubric:: Enunciat
+
+
+En aquesta ocasió desenvoluparem una calculadora senzilla
+que demani a l'usuari un primer operand
+numèric, una operació entre (+ - * /) i un segon operand, i escrigui el
+resultat d'aplicar l'operació als operands.
+
+Exemples d'interacció:
+
+.. code-block:: console
+    :emphasize-lines: 2, 4, 6, 8
+
+    $ python3 calculadorasenzilla.py
+    Primer operand?
+    4
+    Operador?
+    +
+    Segon operand?
+    5
+    4,00 + 5,00 = 9,00
+
+.. code-block:: console
+    :emphasize-lines: 2, 4, 6, 8
+
+    $ python3 calculadorasenzilla.py
+    Primer operand?
+    4
+    Operador?
+    /
+    Segon operand?
+    0
+    No es pot dividir entre 0
+
+.. code-block:: console
+    :emphasize-lines: 2, 4, 6, 8
+
+    $ python3 calculadorasenzilla.py
+    Primer operand?
+    4
+    Operador?
+    ^
+    Segon operand?
+    3
+    L'operador ^ no està disponible

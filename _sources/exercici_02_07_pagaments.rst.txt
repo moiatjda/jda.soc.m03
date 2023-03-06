@@ -1,0 +1,55 @@
+###########################################
+|exerciseicon__T| Exercici 02_07. Pagaments
+###########################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``02_07_pagaments/``
+
+* Continguts relacionats: :doc:`condicionals_niament`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
+.. rubric:: Enunciat
+
+
+Desenvolupa un programa que demani a l'usuari que
+introdueixi un preu en € i la quantitat de € que paga. El programa compararà les
+dues quantitats i escriurà els € que li falten per pagar o bé els que li han de
+tornar.
+
+
+Exemples d'interacció:
+
+
+.. code-block:: console
+    :emphasize-lines: 2, 4, 6
+
+    $ python3 canvi.py
+    Preu?
+    102
+    Paga?
+    150
+    Sobren 48€
+
+.. code-block:: console
+    :emphasize-lines: 2, 4, 6
+
+    $ python3 canvi.py
+    Preu?
+    102
+    Paga?
+    100
+    Falten 2€
+
+.. code-block:: console
+    :emphasize-lines: 2, 4, 6
+
+    $ python3 canvi.py
+    Preu?
+    100
+    Paga?
+    100
+    No sobra ni falta res

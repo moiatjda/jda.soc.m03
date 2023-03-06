@@ -1,0 +1,44 @@
+######################################################################
+|exerciseicon__T| Exercici 02_01. Si ets adult llavors ets responsable
+######################################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``02_01_preso/``
+
+* Continguts relacionats: :doc:`condicionals_simple`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
+.. rubric:: Enunciat
+
+
+Desenvolupa un programa que demani el nom i l'edat a l'usuari, i si és
+major de 18 anys li digui “Vostè ja pot anar a la presó!”.  Finalment,
+sigui quina sigui l'edat de l'usuari el programa s'acomiadarà dient “Vagi
+amb compte «nom de l'usuari»!”.
+
+Exemples d'interacció:
+
+.. code-block:: console
+    :emphasize-lines: 2, 4-
+
+    $ python3 preso.py
+    Com es diu?
+    Manel
+    Quina edat té?
+    17
+    Vagi amb compte Manel
+
+.. code-block:: console
+    :emphasize-lines: 2, 4-
+
+    $ python3 preso.py
+    Com es diu?
+    Anna
+    Quina edat té?
+    19
+    Vostè ja pot anar a la presó!
+    Vagi amb compte Anna

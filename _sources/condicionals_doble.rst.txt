@@ -1,0 +1,58 @@
+###################
+L'alternativa doble
+###################
+
+"Si plou llavors treu el paraigües, sinó deixa'l a casa"
+
+Podem codificar aquesta condició de la següent manera:
+
+.. code-block:: python
+
+    if plou:
+        treu_el_paraigues()
+
+    if not plou:
+        deixa_paraigues_a_casa()
+
+Si bé això funciona, resulta una mica repetitiu. Molts llenguatges, com ara el
+Python, ofereixen la possibilitat d'expressar aquest *sinó*.
+
+En diagrama de flux ho representaríem com:
+
+.. graphviz::
+    :align: center
+
+    digraph {
+        inici[shape="box", style=rounded];
+        final[shape="box", style=rounded];
+        plou[shape="diamond", style=""];
+        "treu el paraigües"[shape="rectangle", style=""]
+        "deixa'l a casa"[shape="rectangle", style=""]
+
+        inici-> plou;
+        plou -> "treu el paraigües"[label="cert"];
+        plou -> "deixa'l a casa"[label="fals"];
+        "treu el paraigües" -> final;
+        "deixa'l a casa" -> final;
+    }
+
+Fixa't com, amb aquesta nova forma de condicional, podem especificar
+quines instruccions a executar quan s'acompleix la condició i quines quan no es
+compleix.
+
+En Python:
+
+.. code-block:: python
+
+    if plou:
+       treu_el_paraigues()
+    else:
+       deixa_paraigues_a_casa()
+
+|exerciseicon__T| :doc:`exercici_02_02_dosenordre`
+
+|exerciseicon___| :doc:`exercici_02_03_quadratsentit`
+
+
+El resultat serà una finestra amb un dibuix d'un quadrat dibuixat amb girs cap a
+la dreta.

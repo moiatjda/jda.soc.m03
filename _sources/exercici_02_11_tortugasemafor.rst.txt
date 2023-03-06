@@ -1,0 +1,33 @@
+#################################################
+|exerciseicon___| Exercici 02_11. Tortuga semàfor
+#################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``02_11_tortugasemafor/``
+
+* Continguts relacionats: :doc:`condicionals_niament`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+.. rubric:: Enunciat
+
+
+Desenvolupa un programa que demani als usuaris de quin color està el semàfor.
+
+Fent servir ``turtle``, dibuixa un cercle de radi 100 amb el color indicat.
+
+El programa només acceptarà els colors 'verd', 'groc' i 'vermell'. Per qualsevol
+altre color, ho pintarà amb negre.
+
+Vinga, que et passo el codi de com es fa el cercle vermell:
+
+.. code-block:: python
+
+    >>> t.fillcolor('red')
+    >>> t.begin_fill()
+    >>> t.circle(100)
+    >>> t.end_fill()
+
+.. image:: _images/turtlesemafor.gif
+    :align: center

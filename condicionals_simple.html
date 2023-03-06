@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ca" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L&#39;alternativa simple &mdash; Introducció a la Programació (SOC) 2223 documentació</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="_static/moistyle.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/logopython.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="Quant a aquests documents" href="about.html" />
+    <link rel="index" title="Índex" href="genindex.html" />
+    <link rel="search" title="Cerca" href="search.html" />
+    <link rel="next" title="L&#39;alternativa doble" href="condicionals_doble.html" />
+    <link rel="prev" title="Condicionals" href="condicionals.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Introducció a la Programació (SOC)
+            <img src="_static/logopython.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2223
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="primeres_passes.html">Primeres passes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instruccions.html">Instruccions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="condicionals.html">Condicionals</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">L'alternativa simple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="condicionals_doble.html">L'alternativa doble</a></li>
+<li class="toctree-l2"><a class="reference internal" href="condicionals_niament.html">Niament múltiple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="condicionals_exercicis.html">Llista d'exercicis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="apendix.html">Apèndix</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Introducció a la Programació (SOC)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="condicionals.html">Condicionals</a></li>
+      <li class="breadcrumb-item active">L'alternativa simple</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="condicionals.html" class="btn btn-neutral float-left" title="Condicionals" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="condicionals_doble.html" class="btn btn-neutral float-right" title="L&#39;alternativa doble" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="l-alternativa-simple">
+<h1>L'alternativa simple<a class="headerlink" href="#l-alternativa-simple" title="Permalink to this heading"></a></h1>
+<p>&quot;Si plou llavors treu el paraigües&quot;</p>
+<p>De manera gràfica podem representar la condició anterior de la següent manera:</p>
+<div align="center" class="align-center"><div class="graphviz"><img src="_images/graphviz-0709469cc33e80ba3171662021d0300e036aeea5.png" alt="digraph {
+    inici[shape=&quot;box&quot;, style=rounded];
+    final[shape=&quot;box&quot;, style=rounded];
+    plou[shape=&quot;diamond&quot;, style=&quot;&quot;];
+    &quot;treu el paraigües&quot;[shape=&quot;rectangle&quot;, style=&quot;&quot;]
+
+    inici-&gt; plou;
+    plou -&gt; &quot;treu el paraigües&quot;[label=&quot;cert&quot;];
+    plou -&gt; final[label=&quot;fals&quot;];
+    &quot;treu el paraigües&quot; -&gt; final;
+}" class="graphviz" /></div>
+</div>
+<p>Fixa't com, depenent de si plou, executem una instrucció o no.</p>
+<p>En Python ho escriuríem de manera semblant a:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">plou</span><span class="p">:</span>
+   <span class="n">treu_el_paraigues</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>De manera general:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">condicio</span><span class="p">:</span>
+    <span class="n">instruccions</span>
+</pre></div>
+</div>
+<p>Allà on diu:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">condició</span></code> hi col·locarem qualsevol expressió que retorni un valor
+booleà. Per exemple <code class="docutils literal notranslate"><span class="pre">nom</span> <span class="pre">==</span> <span class="pre">'Simona'</span></code>, <code class="docutils literal notranslate"><span class="pre">resposta</span> <span class="pre">==</span> <span class="pre">'sí'</span></code> o <code class="docutils literal notranslate"><span class="pre">edat</span> <span class="pre">&lt;=</span> <span class="pre">8</span></code>.</p>
+<p>Fixa't els dos <code class="docutils literal notranslate"><span class="pre">=</span></code>, no és una assignació!</p>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">instruccions</span></code> podem tenir una o més instruccions.</p></li>
+</ul>
+<p>Una altra cosa que potser t'haurà sobtat són aquests espais que apareixen davant
+<code class="docutils literal notranslate"><span class="pre">treu_el_paraigues()</span></code>.  Es coneixen com a <em>sagnat</em>, però com que és una
+paraula una mica <em>gore</em>, farem servir una <em>catalanització</em> del mot en anglès
+<em>intentation</em>. Així, sovint li direm <em>indentació</em>.</p>
+<p>La indentació permet a Python saber quines instruccions s'han d'executar en cas
+que la condició sigui certa. Per tant, és <strong>obligatori</strong> posar-la.</p>
+<p>Pot ser qualsevol número d'espais (o tabuladors) però nosaltres farem servir
+quatre espais per indentar. Això ens evitarà molts problemes amb Python<a class="footnote-reference brackets" href="#problemesindentacio" id="id1">1</a>.</p>
+<div class="section" id="juguem-una-mica">
+<h2>Juguem una mica<a class="headerlink" href="#juguem-una-mica" title="Permalink to this heading"></a></h2>
+<p>A l'hora de desenvolupar els programes amb condicionals, continuarem realitzant
+totes les passes que hem aprés en exercicis anteriors, però afegirem una
+simulació per cada branca:</p>
+<ol class="arabic simple">
+<li><p>Defineix una capçalera</p></li>
+<li><p>Simula una execució per cada branca</p></li>
+<li><p>Genera els fitxers d'entrada i sortida esperada per cada prova</p></li>
+<li><p>Decomposa el programa en, com a mínim tres subproblemes: obtenció de
+l'entrada, càlcul i presentació dels resultats</p></li>
+<li><p>Resol cada subproblema. Si cal, decomposa'ls encara més.</p></li>
+</ol>
+<p>Els programes desenvolupats poden pressuposar que les dades que
+introdueixi l'usuari seran sempre del tipus correcte.
+Els programes hauran, però, de estar preparats perquè l'usuari pugui
+introduir valors incorrectes (per exemple, una edat negativa)</p>
+<p>Si algun dels problemes et resulta complicat d'entendre, potser t'ajudarà
+dibuixar-lo amb un diagrama de flux.</p>
+<p><img alt="exerciseicon__T" src="_images/exerciseicon__T.png" /> <a class="reference internal" href="exercici_02_01_preso.html"><span class="doc"> Exercici 02_01. Si ets adult llavors ets responsable</span></a></p>
+<hr class="docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="problemesindentacio"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>D'acord, vols saber quins problemes, oi? Doncs mira,
+per començar, si barreges indentacions diferents, Python es queixarà.
+Depenent de l'editor (o la seva configuració) els tabuladors ocupen quatre,
+vuit espais (potser altres quantitats) Com que els espais són marques que
+normalment no es veuen, és difícil de saber si hi ha un tabulador o quatre
+(vuit, etc) espais.  Això genera tants embolics que Python3 ja no permet
+barrejar tabuladors i espais per indentar, i <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/#tabs-or-spaces">recomana
+espais</a></p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="condicionals.html" class="btn btn-neutral float-left" title="Condicionals" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="condicionals_doble.html" class="btn btn-neutral float-right" title="L&#39;alternativa doble" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023 - Moisès Gómez Girón.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41103782-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-41103782-2', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

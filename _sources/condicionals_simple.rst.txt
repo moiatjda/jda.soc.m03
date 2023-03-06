@@ -1,0 +1,101 @@
+####################
+L'alternativa simple
+####################
+
+"Si plou llavors treu el paraigües"
+
+De manera gràfica podem representar la condició anterior de la següent manera:
+
+
+.. graphviz::
+    :align: center
+
+    digraph {
+        inici[shape="box", style=rounded];
+        final[shape="box", style=rounded];
+        plou[shape="diamond", style=""];
+        "treu el paraigües"[shape="rectangle", style=""]
+
+        inici-> plou;
+        plou -> "treu el paraigües"[label="cert"];
+        plou -> final[label="fals"];
+        "treu el paraigües" -> final;
+    }
+
+Fixa't com, depenent de si plou, executem una instrucció o no.
+
+En Python ho escriuríem de manera semblant a:
+
+.. code-block:: python
+
+    if plou:
+       treu_el_paraigues()
+
+De manera general:
+
+.. code-block:: python
+
+    if condicio:
+        instruccions
+
+
+Allà on diu:
+
+* ``condició`` hi col·locarem qualsevol expressió que retorni un valor
+  booleà. Per exemple ``nom == 'Simona'``, ``resposta == 'sí'`` o ``edat <= 8``.
+
+  Fixa't els dos ``=``, no és una assignació!
+
+* ``instruccions`` podem tenir una o més instruccions.
+
+
+Una altra cosa que potser t'haurà sobtat són aquests espais que apareixen davant
+``treu_el_paraigues()``.  Es coneixen com a *sagnat*, però com que és una
+paraula una mica *gore*, farem servir una *catalanització* del mot en anglès
+*intentation*. Així, sovint li direm *indentació*.
+
+La indentació permet a Python saber quines instruccions s'han d'executar en cas
+que la condició sigui certa. Per tant, és **obligatori** posar-la.
+
+Pot ser qualsevol número d'espais (o tabuladors) però nosaltres farem servir
+quatre espais per indentar. Això ens evitarà molts problemes amb Python
+[#problemesindentació]_.
+
+Juguem una mica
+===============
+
+A l'hora de desenvolupar els programes amb condicionals, continuarem realitzant
+totes les passes que hem aprés en exercicis anteriors, però afegirem una
+simulació per cada branca:
+
+1. Defineix una capçalera
+
+#. Simula una execució per cada branca
+
+#. Genera els fitxers d'entrada i sortida esperada per cada prova
+
+#. Decomposa el programa en, com a mínim tres subproblemes: obtenció de
+   l'entrada, càlcul i presentació dels resultats
+
+#. Resol cada subproblema. Si cal, decomposa'ls encara més.
+
+Els programes desenvolupats poden pressuposar que les dades que
+introdueixi l'usuari seran sempre del tipus correcte.
+Els programes hauran, però, de estar preparats perquè l'usuari pugui
+introduir valors incorrectes (per exemple, una edat negativa)
+
+Si algun dels problemes et resulta complicat d'entendre, potser t'ajudarà
+dibuixar-lo amb un diagrama de flux.
+
+|exerciseicon__T| :doc:`exercici_02_01_preso`
+
+----
+
+.. [#problemesindentació] D'acord, vols saber quins problemes, oi? Doncs mira,
+   per començar, si barreges indentacions diferents, Python es queixarà.
+   Depenent de l'editor (o la seva configuració) els tabuladors ocupen quatre,
+   vuit espais (potser altres quantitats) Com que els espais són marques que
+   normalment no es veuen, és difícil de saber si hi ha un tabulador o quatre
+   (vuit, etc) espais.  Això genera tants embolics que Python3 ja no permet
+   barrejar tabuladors i espais per indentar, i `recomana
+   espais <https://www.python.org/dev/peps/pep-0008/#tabs-or-spaces>`_
