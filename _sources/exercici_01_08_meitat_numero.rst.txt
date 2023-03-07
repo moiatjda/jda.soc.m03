@@ -15,8 +15,8 @@
 .. rubric:: Enunciat
 
 
-Desenvolupa un programa que demani un número i escrigui la meitat del número
-introduït.
+Desenvolupa un programa que demani un número i escrigui la meitat entera del
+número introduït.
 
 La interacció podria ser similar al següent:
 

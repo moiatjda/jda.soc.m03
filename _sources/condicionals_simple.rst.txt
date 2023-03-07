@@ -68,11 +68,9 @@ A l'hora de desenvolupar els programes amb condicionals, continuarem realitzant
 totes les passes que hem aprés en exercicis anteriors, però afegirem una
 simulació per cada branca:
 
-1. Defineix una capçalera
+#. Defineix una capçalera
 
 #. Simula una execució per cada branca
-
-#. Genera els fitxers d'entrada i sortida esperada per cada prova
 
 #. Decomposa el programa en, com a mínim tres subproblemes: obtenció de
    l'entrada, càlcul i presentació dels resultats

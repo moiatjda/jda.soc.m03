@@ -27,5 +27,5 @@ Exemple d'interacció:
     Mes?
     10
     Any?
-    2003
-    Anterior 9/2003 i posterior 11/2003
+    2023
+    Mes anterior 9/2003 i mes següent 11/2003

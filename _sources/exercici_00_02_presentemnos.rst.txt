@@ -21,8 +21,8 @@ Segueix les instruccions:
 
    .. code-block:: console
 
-        $ mkdir 00_03_presentemnos
-        $ cd 00_03_presentemnos
+        $ mkdir 00_02_presentemnos
+        $ cd 00_02_presentemnos
 
 #. Crea un nou fitxer ``empresento.py`` i escriu-hi codi tal que, en ser
    executat escrigui per pantalla el mateix que ``holamon.py``, excepte que, en
