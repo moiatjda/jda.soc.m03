@@ -27,7 +27,7 @@ Exemples d'interacció:
 .. code-block:: console
     :emphasize-lines: 2, 4, 6
 
-    $ python3 canvi.py
+    $ python3 pagament.py
     Preu?
     102
     Paga?
@@ -37,7 +37,7 @@ Exemples d'interacció:
 .. code-block:: console
     :emphasize-lines: 2, 4, 6
 
-    $ python3 canvi.py
+    $ python3 pagament.py
     Preu?
     102
     Paga?
@@ -47,7 +47,7 @@ Exemples d'interacció:
 .. code-block:: console
     :emphasize-lines: 2, 4, 6
 
-    $ python3 canvi.py
+    $ python3 pagament.py
     Preu?
     100
     Paga?
