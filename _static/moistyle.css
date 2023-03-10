@@ -1,41 +1,31 @@
-/*
-* Functions to deal with cookies acceptance
-*/
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
+#cookiesbox {
+    width:100%;
+    z-index:99999;
+    display:none;
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    text-align:center;
+    background-color: #eae672;
+    padding: 10px 0px;
+    color: red;
+    border: 1px solid black;
 }
 
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-} 
-
-function setUserAcceptsCookies(){
-    setCookie("apuntstecnics", "accepted", 10000);
-    setCookiesboxVisibility();
+div.admonition.exercise p.admonition-title {
+    background-color: lightblue;
+    color: darkblue;
 }
- 
-function setCookiesboxVisibility() {
-    var cookiesbox = document.getElementById("cookiesbox");
-    if (getCookie("apuntstecnics") == "") {
-        cookiesbox.style.display = "block";
-    } else {
-        cookiesbox.style.display = "none";
-    }
+div.admonition.exercise.optional p.admonition-title:before{
+    content: "☼";
+}
+div.admonition.exercise.stared p.admonition-title:before{
+    content: "☆";
+}
+div.admonition.exercise.blackstared p.admonition-title:before{
+    content: "★";
 }
 
+img.align-center {
+    padding-bottom: 1em;
+}
