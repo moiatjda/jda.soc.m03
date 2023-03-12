@@ -1,0 +1,80 @@
+#############
+Codi duplicat
+#############
+
+El codi que tenim ara està prou bé, però presenta un cert inconvenient:
+duplica la petició dels valors.
+
+Recorda el codi:
+
+.. code-block:: python
+    :linenos:
+
+    """
+        Programa que suma nombres positius consecutius, fins
+        rebre un de negatiu
+    """
+
+    # creem la variable on guardarem el resultat de sumar
+    suma = 0   # inicialment no hem sumat res i per tant és 0
+
+    # demana el primer valor
+    print("Introdueix valor")
+    valor = int(input())
+
+    # ves sumant mentre el valor sigui positiu
+    while valor >= 0:
+        suma = suma + valor
+        # demana un nou valor
+        print("Introdueix valor")
+        valor = int(input())
+
+    # mostrem el resultat
+    print("La suma és", suma)
+
+Com podem observar, les línies 10 i 11 són idèntiques a les 17 i 18. D'això
+se'n diu *codi redundant* i és quelcom que hem de defugir doncs són una
+font de problemes. Per exemple, pensa que et cal canviar el missatge per
+demanar el següent valor. Et caldrà modificar-ho en dos llocs. En aquest
+codi tan reduït és fàcil però, creu-me, no sempre ho serà tant.
+
+Per poder eliminar la redundància, una manera molt típica és inicialitzar
+la variable ``valor`` a un valor que faci que la condició del ``while``
+sigui certa la primera vegada, però que no es faci servir.
+
+El codi vindria a ser quelcom similar a:
+
+.. code-block:: python
+    :linenos:
+
+    """
+        Programa que suma nombres positius consecutius, fins
+        rebre un de negatiu
+    """
+
+    # creem la variable on guardarem el resultat de sumar
+    suma = 0   # inicialment no hem sumat res i per tant és 0
+
+    # inventem un valor que ens permeti passar el bucle
+    valor = 0
+
+    # ves sumant mentre el valor sigui positiu
+    while valor >= 0:
+        print("Introdueix valor")
+        valor = int(input())
+        if valor >= 0:  # assegurem-nos que l'hem de sumar
+            suma = suma + valor
+
+    # mostrem el resultat
+    print("La suma és", suma)
+
+Fixa't que ara la redundància està en que fem dos cops la mateixa pregunta
+(al ``while`` i al ``if``) Sovint, com en aquest cas, ens tocarà decidir
+entre dolent i menys dolent.
+
+De moment no et capfiquis gaire. Simplement tingues en compte aquest petit
+*truc* de posar un valor de mentida per entrar la primera vegada al bloc
+del bucle, doncs és **molt** típic.
+
+|exerciseicon__T| :doc:`exercici_03_04_quantsparells`
+

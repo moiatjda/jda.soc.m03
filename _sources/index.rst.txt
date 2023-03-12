@@ -21,9 +21,9 @@ Els continguts d'aquest curs estan organitzats en els següents temes:
     primeres_passes.rst
     instruccions.rst
     condicionals.rst
+    while.rst
     apendix.rst
 
-..    while.rst
 ..    recorreguts.rst
 ..    programacio_modular.rst
 ..    fitxers.rst

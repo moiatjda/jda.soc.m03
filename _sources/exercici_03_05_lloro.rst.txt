@@ -1,0 +1,59 @@
+##########################################
+|exerciseicon__T| Exercici 03_05. El lloro
+##########################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``03_05_lloro/``
+
+* Continguts relacionats: :doc:`while_conclusions`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
+.. rubric:: Enunciat
+
+
+Desenvolupa un programa que vagi demanant paraules i les repeteixi fins
+que rebi una resposta buida. És a dir, la resposta sigui un
+*enter* directament.
+
+Un exemple d'execució seria:
+
+.. code-block:: console
+    :emphasize-lines: 2, 4, 5, 7, 8, 10
+
+    $ python3 lloro.py
+    El lloro pregunta paraula:
+    hola
+    El lloro diu: hola
+    El lloro pregunta paraula:
+    què tal?
+    El lloro diu: què tal?
+    El lloro pregunta paraula:
+
+    Adéu
+
+Fixa't que la resposta del lloro canvia lleugerament en finalitzar.
+
+**Pista**: T'estàs preguntant com pots saber si un text està buit en
+Python?
+
+Aquí et proposo unes quantes maneres de saber si el text està buit:
+
+.. code-block:: python
+
+    text = ""   # un text buit
+
+    if text == "":              # opció directa: comparem
+        print("Està buit")
+
+    if bool(text) == False:     # per Python, un string buit és False
+        print("Està buit")
+
+    if not text:                # no cal convertir-ho a boolean
+        print("Està buit")
+
+Pots escollir aquestes o d'altres maneres. La primera és probablement la
+més clara, mentre que la darrera és la recomanada.

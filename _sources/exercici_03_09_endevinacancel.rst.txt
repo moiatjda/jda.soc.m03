@@ -1,0 +1,49 @@
+###########################################################
+|exerciseicon__T| Exercici 03_09. Endevina amb cancel·lació
+###########################################################
+
+.. rubric:: Context
+
+* Carpeta de lliurament: ``03_09_endevinacancel/``
+
+* Continguts relacionats: :doc:`while_conclusions`
+
+* Com lliurar-lo: :ref:`instruccions <instruccions_git>`
+
+* [✓] Exercici amb :ref:`autoavaluació<descripcio_exercicis_autoavaluacio>`
+
+.. rubric:: Enunciat
+
+
+Tornem a l'exercici que implementava el :doc:`joc d'endevinar
+<exercici_03_08_endevina>`
+
+En aquesta ocasió desenvoluparem una nova versió que millorarà l'exercici.
+
+La versió anterior obligava els usuaris a
+encertar per poder finalitzar.
+
+Aquesta nova versió ofereix la possibilitat de sortir del joc en introduir
+una cadena buida.
+
+Quan els usuaris entrin la cadena buida, el programa respondrà amb el
+missatge "Cancel·lat!" i finalitzarà.
+
+Fixa't que el programa haurà d'oferir tota la funcionalitat de la versió
+anterior.
+
+Un exemple d'execució seria:
+
+.. code-block:: console
+    :emphasize-lines: 2, 4, 5, 7, 8, 10
+
+    $ python3 endevina.py
+    Nombre?
+    5
+    Massa petit
+    Nombre?
+    50
+    Massa gran
+    Nombre?
+
+    Cancel·lat!
